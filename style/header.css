@@ -1,0 +1,144 @@
+.header {
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;	
+}
+
+.header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_logo img {
+	width: 90px;
+	display: inline-block;
+}
+
+@media(max-width: 761px) {
+	.header_nav {
+		display: none;
+	}
+
+	.nav_burger {
+		display: flex;
+	}
+}
+@media(min-width: 760px) {
+	.nav_burger {
+		display: none;
+	}
+}
+
+.nav_link {
+	color: #50000B;
+	font-family: Satoshi;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.nav_link:not(:last-child) {
+		margin-right: 1rem;
+}
+
+.header_logo {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+}
+
+
+
+/* Гамбургер иконка */
+.nav_burger .menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.nav_burger .menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+
+.nav_burger .menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.nav_burger .menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.nav_burger .menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+
+.nav_burger .menu-btn.active {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.nav_burger .menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.nav_burger .menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.nav_burger .menu {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  background: white;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+	height: 100vh;
+}
+
+.nav_burger .menu.active {
+	transform: translateX(0);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav_burger .menu li {
+	list-style-type: none;
+}
+
+.nav_burger .menu li:not(:last-child) {
+	margin-bottom: 1rem;
+
+}
+
+.nav_burger .menu a {
+	color: #50000B;
+	font-size: 18px;
+}
+
+.nav_burger .no-scroll {
+  overflow: hidden;
+}
+
