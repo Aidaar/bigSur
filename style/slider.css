@@ -8,12 +8,12 @@
 	}
 }
 @media(min-width: 760px) {
-	.slider_feedback  {
+	.slider-section .slider_feedback  {
 		padding: 80px 0;
 	}
 }
 
- .slider_feedback {
+ .slider-section .slider_feedback {
 	color:  rgb(80, 0, 11);
 	text-align: center;
 	font-family: Roboto;
@@ -26,12 +26,12 @@
  }
 
 @media(max-width: 761px) {
-	.slider_feedback  {
+	.slider-section .slider_feedback  {
 		padding: 0 0 20px 0;
 	}
 }
 @media(min-width: 760px) {
-	.slider-section  {
+	.slider-section .slider-section  {
 		padding: 0 0 40px 0;
 	}
 }
@@ -70,23 +70,13 @@ button {
   outline: none;
   background: none;
 }
-/* 
-.slider-section img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-} */
 
-.swiper-slides {
+.slider-section .swiper-slides {
 	display: grid;
 }
 
 @media(max-width: 761px) {
-	.swiper-slides  {
+	.slider-section .swiper-slides  {
 		grid-template-columns: 1fr;
 	}
 }
@@ -96,13 +86,13 @@ button {
 	}
 }
 
-.swiper-slide img {
+.slider-section .swiper-slide img {
 	width: 130px;
 	height: 130px;
 	border-radius: 50%;
 }
 
-.swiper-slide {
+.slider-section .swiper-slide {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -112,7 +102,7 @@ button {
 	border: 1px solid #D3D1CF;
 }
 
-.slide_title {
+.slider-section .slide_title {
 	color:  rgb(80, 0, 11);
 	text-align: center;
 	font-family: Roboto;
@@ -123,17 +113,17 @@ button {
 }
 
 @media(max-width: 761px) {
-	.slide_title {
+	.slider-section .slide_title {
 		margin: 10px 0;
 	}
 }
 @media(min-width: 760px) {
-	.slide_title  {
+	.slider-section .slide_title  {
 		margin: 20px 0;
 	}
 }
 
-.slide_star-date {
+.slider-section .slide_star-date {
 	color:  rgba(80, 0, 11, .8);
 	text-align: center;
 	font-family: Roboto;
@@ -144,20 +134,20 @@ button {
 }
 
 @media(max-width: 761px) {
-	.slide_star-date {
+	.slider-section .slide_star-date {
 		margin: 0 10px 0 0;
 	}
 }
 @media(min-width: 760px) {
-	.slide_star-date  {
+	.slider-section .slide_star-date  {
 		margin: 0 20px 0 0;
 	}
 }
 
-.slide_star {
+.slider-section .slide_star {
 	display: flex;
 }
 
-.slide_star-item:not(:last-child) {
+.slider-section .slide_star-item:not(:last-child) {
 	margin-right: 10px;
 }
