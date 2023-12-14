@@ -1,3 +1,7 @@
+window.onload = function() {
+	window.scrollTo(0, 0);
+};
+
 const swiper = new Swiper(".swiper-slider", {
   centeredSlides: true,
   slidesPerView: 1,
