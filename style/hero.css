@@ -57,16 +57,6 @@
 	}
 }
 
-
-.hero_btn {
-	display: flex;
-	align-items: center;
-	padding: 13px 33px;
-	border-radius: 20px;
-	border: none;
-	background-color: var(--white-100);
-}
-
 @media(max-width: 761px) {
 	.hero_btn {
 		margin-top: 1rem;
@@ -79,9 +69,12 @@
 	}
 }
 
+.hero .btn {
+	margin-top: 20px;
+	background-color: var(--white-100);
+}
 
-.hero_btn-item {
+.hero .btn-item {
 	color: rgb(80, 0, 11);
-	font-size: 18px;
 }
 

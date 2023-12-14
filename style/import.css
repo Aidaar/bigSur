@@ -5,8 +5,8 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./about.css";
-@import "./services.css";
+@import "./portfolio.css";
 @import "./slider.css";
 @import "./footer.css";
-@import "./video_section.css";
-@import "./services_page/serHero.css";
+@import "./work_process.css";
+@import "./portfolio_page/serHero.css";
